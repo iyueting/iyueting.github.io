@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="SkyOne">
+
+
+
+
+
+<title>《基业长青》笔记 | Hexo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">SkyOne&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">SkyOne&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">《基业长青》笔记</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">SkyOne</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">November 23, 2019&nbsp;&nbsp;22:37:00</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>这是我新建博客网站的第一篇读书笔记，平时看书很少会像这样认真的写一篇读书笔记。因为，平时读书想法只是求快，读完书后，过了几天就都忘记了。深知这样学习效果很差，也浪费了很多时间和精力，自己却没多少成长。<br>现在为了逼自己输出，特意买了10年的域名和创建了这个博客，以此督促自己把读过的书进行整理、输出，养成习惯，学习新知，扩展自己的知识边界，提高认知和完善自己。</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>该书通过对比高瞻远瞩公司和普通公司的差异，说明高瞻远瞩公司如何、为何能成为高瞻远瞩的公司，能够不断保持创新、进步和卓越。反而，很多普通公司经过市场激烈竞争要么被这些高瞻远瞩公司并购，要么从此退出历史舞台，趟在历史的某个角度，被人遗忘。其中不乏曾经红极一时的跨国巨头，也都默默退出历史舞台。让我们一起去了解那些高瞻远瞩的公司是如何成就伟业的吧！</p>
+<h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><h3 id="成为造钟人，而不是报时人"><a href="#成为造钟人，而不是报时人" class="headerlink" title="成为造钟人，而不是报时人"></a>成为造钟人，而不是报时人</h3><p>造钟的根本要义：是配合保存核心及刺激进步的心态创造有形的机制。<br>有形的机制，可以理解为一种信念、核心价值观等。<br>造钟人：作者用造钟人比喻创造公司的那些人、信念、核心价值观等。<br>即：专注于公司产品打磨和服务质量提升，明确核心价值观，保持思想开放和创新精神，不断进取，持之以恒。</p>
+<h3 id="保存核心，刺激进步"><a href="#保存核心，刺激进步" class="headerlink" title="保存核心，刺激进步"></a>保存核心，刺激进步</h3><p>保存核心，刺激进步的根本动力是高瞻远瞩公司的基础。<br>建立高瞻远瞩公司的第一步：明确一种核心理念。</p>
+<ul>
+<li><p>什么是核心理念？<br>  核心理念=核心价值观+使命</p>
+</li>
+<li><p>核心价值观=组织长盛不衰的信条，即少数几条一般的指导原则，不能与特定的文化或作业方法混为一谈，<br>  也不能为了财务利益或短期权益而自毁立场。</p>
+</li>
+<li><p>使命=组织在赚钱之外的根本原因——地平线上恒久的指引明星（灯塔），不能和特定的目标和业务策略混为一谈。</p>
+<p>  <strong>IBM前CEO小托马斯-沃森谈他对核心价值观（他称之为信念）：<br>  首先，任何组织想继续生存和获得成功，一定要有健全的信念，作为所有政策和行动的前提。<br>  其次，我相信企业成功最重要的唯一原因，是忠诚地遵循这些信念。信念必须放在首位，如果政策做法和目标似乎违反根本信念，它们就必须改变。</strong></p>
+</li>
+</ul>
+<p>核心理念不能太多，6个以下比较好。</p>
+<p><strong>追求进步</strong></p>
+<ul>
+<li>追求进步的驱动力源自人类一种深层次的冲动，一种探索、创造、发现、希望、成功、改变和改善的冲动。</li>
+</ul>
+<p><strong>为什么需要保存核心，刺激进步</strong></p>
+<ul>
+<li><p>核心理念提供一贯基础，使高瞻远瞩可以据此演进、实验和改变，而获得进步，因为明确了什么是核心，公司更容易在不属于核心的所有事情上追求变化和行动。</p>
+</li>
+<li><p>追求进步的驱动强化核心理念，因为如果没有持续不断的变化和前进，坚持这种核心理念的公司在变化无常的世界上便会落伍，不再强大，甚至不能再生存。</p>
+</li>
+</ul>
+<h3 id="保存核心和刺激进步的特殊方法：高瞻远瞩公司不同于普通公司的特质"><a href="#保存核心和刺激进步的特殊方法：高瞻远瞩公司不同于普通公司的特质" class="headerlink" title="保存核心和刺激进步的特殊方法：高瞻远瞩公司不同于普通公司的特质"></a>保存核心和刺激进步的特殊方法：高瞻远瞩公司不同于普通公司的特质</h3><ol>
+<li>设立胆大包天的目标<br> 大胆、具有挑战性、高分析的目标和计划，投入大量努力（刺激进步）</li>
+<li>像宗教一样的文化<br> 保留、栽培高度认同公司文化的人（保存核心）</li>
+<li>多方尝试，保存有用的部分<br> 重视科研，鼓励创新，保持进化（刺激进步）</li>
+<li>自行培养经理人<br> 从内部选拔人才，培养人才。提拔与公司理念高度一致的人才。</li>
+<li>永远不够好，持续改进<br> 探讨持续不断、一心一意、追求自我改进的程序，目标是越做越好，永远追求更好。</li>
+</ol>
+<h3 id="1-设立胆大包天的目标"><a href="#1-设立胆大包天的目标" class="headerlink" title="1. 设立胆大包天的目标"></a><strong>1. 设立胆大包天的目标</strong></h3><p>如何设立胆大包天的目标？</p>
+<ul>
+<li>胆大包天的目标应该即为明确动人，需要的解释很少，或者根本不需要解释。请记住：胆大包天的目标是一种目标——想爬山或登月一样，而不是一种宣言。如果不能让大家活力四射，就根本不是胆大包天的目标。</li>
+<li>胆大包天的目标应该元元处于轻易可达的区域之外。组织里的人应该有理由相信他们可以实现这个目标，但是，应需要英雄般英勇的努力，而且可能还需要一点点幸运。</li>
+<li>胆大包天的目标本身应该极为大胆和振奋人心，即使组织的领袖在目标实现前去世，仍然能够继续刺激进步。</li>
+<li>胆大包天的目标具有潜在的危险，目标一旦达成后，组织可能就此停步，沉醉在“我们已经到达了”综合整理。一家公司应该准备好后续的胆大包天的目标，以防止这一点，还应该用刺激进步的其他方法，来弥补胆大包天目标的不足。</li>
+<li><strong>最后一点最重要，胆大包天目标应该符合公司的核心理念。</strong></li>
+</ul>
+<p><strong>2. 像宗教一样的文化</strong><br>    建立一个用具体的特定方法，热心保持和新理念的组织。<br>高瞻远瞩公司把他们的理念转化为有形的机制，就像教派一样，同时发出持续一贯、加强理念的信号，他们对员工灌输理念，规定必须严密契合公司，并且利用下列实用、具体的事项创造出一种身属特殊团体的意识：</p>
+<ul>
+<li>兼具理念与实际内容的新人培训与后续培训计划，教导价值观、标准、历史和传统。</li>
+<li>内部“大学”与培训中心</li>
+<li>有同事与顶头上司负责在职社会化培训</li>
+<li>严格由内部逐级提升的政策——雇佣年轻人，从内部提升，并且从年轻时开始塑造员工的心态</li>
+<li>宣扬“英雄事迹”和公司典范</li>
+<li>都有的语言和名字，强化既有的参考架构，强化身属特殊精英团体的意识</li>
+<li>公司歌曲、肯定言辞或誓言，强化心理上的认同</li>
+<li>在招聘期间或雇用头几年实施严格的筛选程序</li>
+<li>采用的奖励和升迁标准明确地与要求员工全心融入公司理念并为一谈</li>
+<li>用奖赏、竞赛和公开表扬奖励尽力符合公司理念的人，用明显、有形的惩罚惩处逾越理念界限的人</li>
+<li>设置“诱导”员工相信公司理念的机制</li>
+<li>工厂与办公室布置加强公司的标准和理想</li>
+<li>用口头和文字不断强调公司的价值观、传统及身属与众不同团体的意识</li>
+</ul>
+<p>有木有一种洗脑的感觉！</p>
+<p><strong>3. 多方尝试，保存有用的部分</strong><br>高瞻远瞩公司刺激进化式的五大教训：</p>
+<ol>
+<li>试一试，而且要快<ul>
+<li>整顿、尝试、做事、调整、行动，无论如何不要呆坐着不动</li>
+</ul>
+</li>
+<li>接受必然会有的错误<ul>
+<li>因为事前不能预知哪种变化会有用，就必须接受失败，视之为演进过程中不可或缺的一部分</li>
+</ul>
+</li>
+<li>采取小步骤<ul>
+<li>渐进式的小步骤可能成为战略性转变的基础</li>
+</ul>
+</li>
+<li>给员工所需的时间<ul>
+<li>提供员工更大自主性</li>
+<li>要容许大家持之以恒</li>
+</ul>
+</li>
+<li>机制——构建滴答作响的机制<ul>
+<li>刺激进步的有形机制</li>
+</ul>
+</li>
+</ol>
+<p>戒律：不该做的事</p>
+<ol>
+<li>大通曼哈顿银行：大通银行由控制成癖的戴维-洛克菲勒统治，大通银行变成了充满恐惧的环境，经理们花大部分时间开会，而不是决策和行动</li>
+<li>宝来：宝来总裁雷伊麦克唐纳是一个“每天必须证明自己是老板的人”，扼杀个人首创精神，几乎把所有具有实验倾向的人才都赶走了。</li>
+<li>德州仪器：后任者制定由上而下的专制制度，利用恐惧和威胁抹杀德州仪器的开创性企业文化</li>
+</ol>
+<p><strong>4. 自行培养经理人</strong><br>    大家耳熟能详的例子莫过于通用电气CEO杰克韦尔奇。但是，杰克韦尔奇是在通用电气连续工作20年后，才成为CEO的。<br>    拥有像杰克韦尔奇这种才干的CEO令人赞叹，一个世纪里都有像杰克韦尔奇这样的干才当CEO，而且全部是公司的内部自行培养的，这的确是通用电气成为高瞻远瞩公司的关键原因之一<br>    很多公司在真正的传承时刻之前很久就规划好了继承事宜。</p>
+<p><strong>5. 永远不够好，持续改进</strong><br>    别只追求胜过同辈或前辈，要设法胜过你自己——威廉福克纳<br>    1. 永不满足机制 </p>
+<ul>
+<li>高瞻远瞩公司设置强大有力的机制来产生永不满足的心态，消除自满从而在外部世界发出要求之前，就刺激变革和改善</li>
+<li>高瞻远瞩公司的经理根本不接受在短期绩效和长期成功之间必须选者其一的说法。他们先为长期努力，同时又用极为严格的短期标准自我要求</li>
+<li>高瞻远瞩公司通过广招贤才、员工培训和专业发展计划，大力加强人力资源投资。</li>
+<li>高瞻远瞩公司在科技知识、新技术、新管理方法和创新产业的做法方面更早、更积极</li>
+</ul>
+<p>如果你在努力构建和管理一家公司，我们敦促你思考下面的问题：</p>
+<ul>
+<li>你可以创造哪些“永不满足的机制”，既能消除自满自适，从内部变革和改善，又符合公司的核心理念？你如何让这些机制有强大的约束力？</li>
+<li>你在今天表现优异时做了哪些投资未来的事情？贵公司是否领先同行业，率先采用了创新的方法和科技？</li>
+<li>你如何面对衰退？贵公司是否在困难时期仍然继续为长期积累力量？</li>
+<li>贵公司是否明白“安逸不是目标”？明白在高瞻远瞩公司日子不应该轻松？贵公司是否不把表现优异作为最后目标，而代之以持之不懈、永远追求明天要做的比今天好的工作纪律？</li>
+</ul>
+<p><strong>黑带高手的寓言</strong><br>想象一位武林高手跪在武学宗师面前，接受得来不易的黑带仪式。这个徒弟进过多年严格训练，在武林里终于出人头地。<br>“在授给你黑带之前，你必须在接受一个考验。”武学宗师说。<br>“我准备好了。”徒弟答到，以为可能是最后一个回合的练拳。<br>“你必须回答最基本的问题：黑带的真正含义是什么？”<br>“是我习武历程的结束，”徒弟说，”是我幸苦练功应该得到的奖励。”<br>武学宗师等着他在说些什么。显然他不满意徒弟的回答。最后他开口了：”你还没有到拿黑带的时候。一年后再来。”<br>一年后，徒弟再度跪在武学宗师面前。<br>“黑带真正含义是什么？”宗师问。<br>“是本门武学中杰出和最高成就的象征。”徒弟说<br>武学宗师等啊等啊，过了好几分钟还不说话，显然他还是不满意。最后他说到：”你还没有到拿黑带的时候。一年后再来。”<br>一年后，徒弟再度跪在武学宗师面前。师傅又问道:”黑带的真正含义是什么？”<br>“黑带代表开始——代表无休止的磨练、奋斗和追求更高标准的历程的起点。”<br>“好。你可以接受黑带，开始奋斗了。”</p>
+<p><strong>这不是终点，甚至不是终点的起点，但可能是起点的起点——温斯顿丘吉尔</strong></p>
+<h2 id="感想"><a href="#感想" class="headerlink" title="感想"></a>感想</h2><p>阿里巴巴之所以越来越强大，马云在创建阿里巴巴之初想必就已经明确了公司的核心价值观和理念，并且在实践和管理中一直恪守的这些信条。这让我想起看到的一则故事，有次在年终演讲大会上，一位业绩非常好的销售人员上台分享自己的销售技巧，台下马云听到这位销售人员在销售过程中采用的一些技巧或方法违背了公司的理念时，当场就把这位销售人员轰下台，并进行一番教育。可见，马云对于公司的理念恪守有着多么严格的标准。<br>反观自己现在所在公司，虽然也明确了公司的核心理念，但实际运作中，却和公司的理念相差甚远，甚至有些背道而驰。所以，有时候公司突然就遭遇灭顶之灾、命悬一线，甚至倒闭清场，都是有其原因的。</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>SkyOne</span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>Permalink:</span>
+                        <span><a href="http://xmind.live/2019/11/23/%E3%80%8A%E5%9F%BA%E4%B8%9A%E9%95%BF%E9%9D%92%E3%80%8B%E7%AC%94%E8%AE%B0/">http://xmind.live/2019/11/23/%E3%80%8A%E5%9F%BA%E4%B8%9A%E9%95%BF%E9%9D%92%E3%80%8B%E7%AC%94%E8%AE%B0/</a></span>
+                    </p>
+                
+                
+                    <p class="copyright-item">
+                        <span>License:</span>
+                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC-BY-NC-4.0</a> LICENSE</span>
+                    </p>
+                
+                
+                     <p class="copyright-item">
+                         <span>Slogan:</span>
+                         <span>Do you believe in <strong>DESTINY(命运)<strong>?</span>
+                     </p>
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"># 读书笔记</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();" target="_blank" rel="noopener">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2019/11/24/%E8%A7%82%E3%80%8A%E5%B0%8F%E4%B8%912%E3%80%8B%E6%84%9F%E6%83%B3/">观《小丑》感想</a>
+            
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© SkyOne | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
